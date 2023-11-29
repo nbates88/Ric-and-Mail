@@ -1,7 +1,7 @@
 
 import './App.css';
 import ProductPage from './components/ProductPage';
-import Form from './components/Form';
+// import Form from './components/Form';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
      <h1 className="text-3xl font-bold underline">
       Hello world!
     </h1>
-    <Form/>
+    {/* <Form/> */}
 <ProductPage/>
     
 
