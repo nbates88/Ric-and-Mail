@@ -1,16 +1,14 @@
-import React from 'react'
-import NavBar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Footer from '../components/Footer'
+import React from 'react';
+import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 
-function home() {
+function Home() {
   return (
     <div>
-      <NavBar/>
       <Hero/>
       <Footer/>
     </div>
   )
 }
 
-export default home
+export default Home;
