@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 const products = [
     {
       id: 1,
-      name: 'Basic Tee',
-      href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      name: 'White Tee',
+      href: '/ProductDetail',
+      imageSrc: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
       color: 'Black',
@@ -101,10 +102,12 @@ function Shop() {
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
+                    {/* LINK TO PRODUCT DETAIL PAGE HERE */}
                     <a href={product.href}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.name}
                     </a>
+                    {/* END HERE */}
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                 </div>

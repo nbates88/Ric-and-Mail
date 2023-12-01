@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import {Link} from 'react-router-dom';
+import Form from '../places/Form';
 
 function Hero() {
 
@@ -51,9 +52,9 @@ function Hero() {
               >
                 Shop Now
               </Link>
-              {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <Link to='/Form' className="text-sm font-semibold leading-6 text-gray-900">
                 Sign up for rewards!  <span aria-hidden="true">→</span>
-              </a> */}
+              </Link>
             </div>
           </div>
         </div>

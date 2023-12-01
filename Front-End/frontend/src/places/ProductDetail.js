@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
@@ -60,11 +61,14 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function ProductDetail() {
+
+
+function ProductDetail() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
   return (
+    <div>
     <div className="bg-white">
       <div className="pt-6">
         <nav aria-label="Breadcrumb">
@@ -307,5 +311,8 @@ export default function ProductDetail() {
         </div>
       </div>
     </div>
+    </div>
   )
 }
+
+export default ProductDetail
